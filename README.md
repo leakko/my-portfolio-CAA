@@ -1,2 +1,2 @@
-**This is my fictional personal portofolio**
-*Practical Continuous Assesment Activity - [Techniques for Software Application Development Degree](https://studies.uoc.edu/en/bachelors-degrees/software-development/presentation)*
+**FICTIONAL PERSONAL PORTFOLIO** <br/>
+*This is a Continuous Assesment Activity of the [Techniques for Software Application Development Degree](https://studies.uoc.edu/en/bachelors-degrees/software-development/presentation)*
