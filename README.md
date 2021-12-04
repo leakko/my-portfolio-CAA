@@ -1,4 +1,30 @@
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Logo_blau_uoc.png" alt="UOC Logo" width="200"/>
+<style>
+    #screenshot {
+        width:75%;
+        margin-left:calc(25%/2);
+        margin-bottom:15px;
+    }
+    @media(max-width:500px) {
+        #screenshot {
+            width:100%;
+            margin: 0;
+        }
+    }
+    @media(min-width:1000px) {
+        #screenshot {
+            width:50%;
+            margin-left:calc(50%/2);
+        }
+    }
+    @media(min-width:2000px) {
+        #screenshot {
+            width:35%;
+            margin-left:calc(65%/2);
+        }
+    }
+</style>
+
+<img src="https://www.uoc.edu/portal/_resources/common/imatges/sala_de_premsa/noticies/2016/202-nova-marca-uoc.jpg" alt="UOC Logo" width="200"/>
 
 <!-- INTRO SECTION -->
 <section>
@@ -10,6 +36,9 @@
 <!-- GENERAL SPECIFICATIONS -->
 <section>
         <h1>General Specifications</h1>
+        <img id="screenshot"
+        src="images/screenshots/index.png"
+        >
             <ul>
                 <li>
                     <p>
