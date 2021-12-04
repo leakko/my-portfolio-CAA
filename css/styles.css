@@ -70,7 +70,7 @@
   color: white;
 }*/
 
-/* ALUMN STYLES */
+/* GENERAL STYLES */
 
 body {
   margin: 0;
@@ -82,10 +82,13 @@ body {
   margin: 0 auto;
 }
 
+/* HEADER STYLES */
+
 header {
   font-weight: bold;
   border-bottom: 1px solid rgba(128, 128, 128, 0.5);
   padding: 15px 0;
+  font-size: 1.2rem;
 }
 
 header .container,
@@ -107,6 +110,16 @@ nav ul {
   display: flex;
   list-style: none;
   justify-content: space-between;
+}
+
+header a:not(a[href]),
+header a:hover {
+  color: #0019ff;
+}
+
+header a {
+  color: #0c0c0d;
+  text-decoration: none;
 }
 
 header .container div:first-child {

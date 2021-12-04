@@ -1,15 +1,15 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Logo_blau_uoc.png" alt="UOC Logo" width="200"/>
 
+<!-- INTRO SECTION -->
 <section>
     <h1>MY PERSONAL PORTFOLIO</h1>
     <p>
         This is a Continuous Assesment Activity of the <a href="https://www.uoc.edu/portal/_resources/common/imatges/sala_de_premsa/noticies/2016/202-nova-marca-uoc.jpg">Techniques for Software Application Development Degree</a>
     </p>
 </section>
+<!-- GENERAL SPECIFICATIONS -->
 <section>
-    <h2>Code Explanation</h2>
-    <div>
-        <h3>General Specifications</h3>
+        <h1>General Specifications</h1>
             <ul>
                 <li>
                     <p>
@@ -18,7 +18,7 @@
                 </li>
                 <li>
                     <p> 
-                        We remove the default <code>&#60;body&#62;</code> margin
+                        We remove the default <code>&#60;body&#62;</code> margin and set the default text color of the document.
                     </p>
 <pre>
     <code>
@@ -44,66 +44,100 @@
 </pre>
                 </li>
             </ul>
-        <h3>Header</h3>
-            <ul>
-                <li>
-                    We make all the text inside bold, divide the <code>&#60;header&#62;</code> form the <code>&#60;main&#62;</code> using a border and finally we make it wider.
-<pre>
-    <code>
-        header {
-            font-weight: bold;
-            border-bottom: 1px solid rgba(128, 128, 128, 0.5);
-            padding: 15px 0;
-        }
-    </code>
-</pre>
-                </li>
-                <li>
-                    We make all the divs inside the header a flex box, so the three elements place one next to each other. Then we add space between these elements forcing them to take the whole space of the container. Finally, we make the elements align vertically next to each other.
+            <!-- 
+            HEADER
+            -->
+            <h2>Header</h2>
+                <ul>
+                    <li>
+                        The header is composed of three elements, two <code>&#60;div&#62;</code>s and a central <code>&#60;nav&#62;</code>, that represents a navigation menu that allows the user to change between the 3 pages.
+                        Each <code>&#60;div&#62;</code> is composed of one image and one <code>&#60;p&#62;</code>.
+                        With the next CSS ruleset we make the two elements inside each <code>&#60;div&#62;</code> place aligned next to each other.
 <pre>
     <code>
         header .container,
         header div {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         }
     </code>
-</pre>
-                </li>
-                <li>
-                    We make tha navbar (central section of the header) take up 35% of the container space, so there is space between the 3 nav items.
-<pre>
-    <code>
-        nav {
-            width: 35%;
+</pre>              
+                        With this rule, we also make the <code>&#60;div class="container"&#62;</code> inside the header a flex box, so the two <code>&#60;div&#62;</code>s and the <code>&#60;nav&#62;</code> place next to each other. Then with the <i>justif-content</i> property we add space between these elements forcing them to take the whole space of the container. Finally, we make the elements align vertically next to each other.
+                    </li>
+                    <li>
+                        The central navbar has one <code>&#60;ul&#62;</code>, whose <code>&#60;li&#62;</code>s has one <code>&#60;a&#62;</code> inside to link to the rest of the pages.
+                    </li>
+                    <li>
+                        We make all the text inside bold, divide the <code>&#60;header&#62;</code> from the <code>&#60;main&#62;</code> using a border and finally we make it wider.
+    <pre>
+        <code>
+            header {
+                font-weight: bold;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+                padding: 15px 0;
+            }
+        </code>
+    </pre>
+                    </li>
+                    <li>
+                        We make tha navbar (central section of the header) take up 35% of the container space, so there is space between the 3 <code>&#60;li&#62;</code>s inside the navbar.
+    <pre>
+        <code>
+            nav {
+                width: 35%;
+            }
+        </code>
+    </pre>
+                    </li>
+                    <li>
+                        Now that the navbar have space, we turn it into a flexbox so each nav item place next to each other. We remove the list bullets. Finally, we give space between the elements inside the navbar.
+    <pre>
+        <code>
+            nav ul {
+                display: flex;
+                list-style: none;
+                justify-content: space-between;
+            }
+        </code>
+    </pre>
+                    </li>
+                    <li>
+                        We make blue the nav items when the user hover them, or when it's the page that the user it's currently visiting (because it has no href attribute in the active item)
+    <pre>
+        <code>
+            header a:not(a[href]),
+            header a:hover {
+            color: #0019ff;
         }
-    </code>
-</pre>
-                </li>
-                <li>
-                    Now that the navbar have space, we turn it into a flexbox so each nav item place next to each other. We remove the list bullets. Finally, we give space between the elements inside the navbar.
-<pre>
-    <code>
-        nav ul {
-            display: flex;
-            list-style: none;
-            justify-content: space-between;
+        </code>
+    </pre>
+                    </li>
+                     </li>
+                    <li>
+                        We remove the default anchor color and underline.
+    <pre>
+        <code>
+            header a {
+                color: #0c0c0d;
+                text-decoration: none;
+            }
+        </code>
+    </pre>
+                    </li>
+                    <li>
+                        Finally, we select only the first <code>&#60;div&#62;</code> inside the header (the logo and title), and make its font blue and a little bigger.
+    <pre>
+        <code>
+            header .container div:first-child {
+            font-size: 1.5rem;
+            color: #1b1fff;
         }
-    </code>
-</pre>
-                </li>
-                <li>
-                    Finally, we select only the first <code>&#60;div&#62;</code> inside the header (the logo and title), and make its font blue and a little bigger.
-<pre>
-    <code>
-        header .container div:first-child {
-        font-size: 1.5rem;
-        color: #1b1fff;
-    }
-    </code>
-</pre>
-                </li>
-            </ul>
-    </div>
+        </code>
+    </pre>
+                    </li>
+                </ul>
+</section>
+<section>
+
 </section>
