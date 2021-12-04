@@ -1,23 +1,27 @@
 <style>
-    #screenshot {
+    #screenshot,
+    #header {
         width:75%;
         margin-left:calc(25%/2);
         margin-bottom:15px;
     }
     @media(max-width:500px) {
-        #screenshot {
+        #screenshot,
+        #header {
             width:100%;
             margin: 0;
         }
     }
     @media(min-width:1000px) {
-        #screenshot {
+        #screenshot,
+        #header {
             width:50%;
             margin-left:calc(50%/2);
         }
     }
     @media(min-width:2000px) {
-        #screenshot {
+        #screenshot,
+        #header {
             width:35%;
             margin-left:calc(65%/2);
         }
@@ -77,6 +81,10 @@
             HEADER
             -->
             <h2>Header</h2>
+            <img 
+            src="images/screenshots/header.png"
+            id="header"
+            >
                 <ul>
                     <li>
                         The header is composed of three elements, two <code>&#60;div&#62;</code>s and a central <code>&#60;nav&#62;</code>, that represents a navigation menu that allows the user to change between the 3 pages.
@@ -98,13 +106,15 @@
                         The central navbar has one <code>&#60;ul&#62;</code>, whose <code>&#60;li&#62;</code>s has one <code>&#60;a&#62;</code> inside to link to the rest of the pages.
                     </li>
                     <li>
-                        We make all the text inside bold, divide the <code>&#60;header&#62;</code> from the <code>&#60;main&#62;</code> using a border and finally we make it wider.
+                        We make all the text inside bold and divide the <code>&#60;header&#62;</code> from the <code>&#60;main&#62;</code> using a border.
+                        Then we add some space at the left and right of the header and make the header text bigger.
     <pre>
         <code>
             header {
                 font-weight: bold;
                 border-bottom: 1px solid rgba(128, 128, 128, 0.5);
-                padding: 15px 0;
+                padding: 0 10px;
+                font-size: 1.2rem;
             }
         </code>
     </pre>
