@@ -69,3 +69,47 @@
   background: #0c0c0d;
   color: white;
 }*/
+
+/* ALUMN STYLES */
+
+body {
+  margin: 0;
+  color:  #0c0c0d;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  font-weight: bold;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  padding: 15px 0;
+}
+
+header .container,
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  margin-right: 10px;
+}
+
+nav {
+  width: 35%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+header .container div:first-child {
+  font-size: 1.5rem;
+  color: #1b1fff;
+}
