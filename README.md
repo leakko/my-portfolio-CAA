@@ -1,35 +1,5 @@
 <link rel="stylesheet" href="css/readme-styles.css">
 
-<!-- <style>
-    #screenshot,
-    #header {
-        width:75%;
-        margin-left:calc(25%/2);
-        margin-bottom:15px;
-    }
-    @media(max-width:500px) {
-        #screenshot,
-        #header {
-            width:100%;
-            margin: 0;
-        }
-    }
-    @media(min-width:1000px) {
-        #screenshot,
-        #header {
-            width:50%;
-            margin-left:calc(50%/2);
-        }
-    }
-    @media(min-width:2000px) {
-        #screenshot,
-        #header {
-            width:35%;
-            margin-left:calc(65%/2);
-        }
-    }
-</style> -->
-
 <img src="https://www.uoc.edu/portal/_resources/common/imatges/sala_de_premsa/noticies/2016/202-nova-marca-uoc.jpg" alt="UOC Logo" width="200"/>
 
 <!-- INTRO SECTION -->
@@ -91,7 +61,7 @@
                     <li>
                         The header is composed of three elements, two <code>&#60;div&#62;</code>s and a central <code>&#60;nav&#62;</code>, that represents a navigation menu that allows the user to change between the 3 pages.
                         Each <code>&#60;div&#62;</code> is composed of one image and one <code>&#60;p&#62;</code>.
-                        With the next CSS ruleset we make the two elements inside each <code>&#60;div&#62;</code> place aligned next to each other.
+                        With the next CSS ruleset we make the two elements inside each <code>&#60;div&#62;</code> get aligned next to each other.
 <pre>
     <code>
         header .container,
@@ -108,7 +78,7 @@
                         The central navbar has one <code>&#60;ul&#62;</code>, whose <code>&#60;li&#62;</code>s has one <code>&#60;a&#62;</code> inside to link to the rest of the pages.
                     </li>
                     <li>
-                        We make all the text inside bold and divide the <code>&#60;header&#62;</code> from the <code>&#60;main&#62;</code> using a border.
+                        We make all the text inside the header bold and divide the <code>&#60;header&#62;</code> from the <code>&#60;main&#62;</code> using a border.
                         Then we add some space at the left and right of the header and make the header text bigger.
     <pre>
         <code>
@@ -116,7 +86,7 @@
                 font-weight: bold;
                 border-bottom: 1px solid rgba(128, 128, 128, 0.5);
                 padding: 0 10px;
-                font-size: 1.2rem;
+                font-size: 1.1rem;
             }
         </code>
     </pre>
@@ -144,7 +114,7 @@
     </pre>
                     </li>
                     <li>
-                        We make blue the nav items when the user hover them, or when it's the page that the user it's currently visiting (because it has no href attribute in the active item)
+                        We make blue the nav items when the user hover them, or when it's the page that the user it's currently visiting (because the active item has no href attribute)
     <pre>
         <code>
             header a:not(a[href]),
@@ -171,9 +141,53 @@
     <pre>
         <code>
             header .container div:first-child {
-            font-size: 1.5rem;
-            color: #1b1fff;
-        }
+                font-size: 1.5rem;
+                color: #1b1fff;
+            }
+        </code>
+    </pre>
+                    </li>
+                </ul>
+                <!-- 
+            FOOTER
+            -->
+            <h2>Footer</h2>
+            <img 
+            src="images/screenshots/footer.png"
+            id="header"
+            >
+                <ul>
+                    <li>
+                        The <code>&#60;footer&#62;</code> is composed of only two <code>&#60;p&#62;</code>s, one for each line of text.
+                        In the second line, we have an <code>&#60;a&#62;</code> with the <i>href</i> attribute set to <i>_blank</i>, so that the page opens in a new tab.
+                    </li>
+                    <li>
+                        We turn the <code>&#60;footer&#62;</code> into a flexbox, and use the flex-direction to place each <code>&#60;p&#62;</code> above each other. Then we can use <i>justify-content</i> and <i>align-items</i> together to plce both lines in the center of the <code>&#60;footer&#62;</code>.
+                        Then we give some space at the top and bottom, and finally we add a <i>border-top</i> to ivide the <code>&#60;footer&#62;</code> from the <code>&#60;main&#62;</code> section.
+    <pre>
+        <code>
+            footer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 0;
+                border-top: 1px solid rgba(128, 128, 128, 0.5);
+            }
+        </code>
+    </pre>
+                    </li>
+                    <li>
+                       We set the default color of the link that is inside the footer, and remove the underline, because we will use it when the user hovers the <code>&#60;a&#62;</code> to indicate him that is clickable.
+    <pre>
+        <code>
+            footer a {
+                color:  #0019ff;
+                text-decoration: none;
+            }
+            footer a:hover {
+                text-decoration: underline;
+            }
         </code>
     </pre>
                     </li>
