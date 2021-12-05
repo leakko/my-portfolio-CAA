@@ -10,7 +10,7 @@
     </p>
 </section>
 <!-- NAV BAR -->
-<section class="nav">
+<section id="nav">
     <ul>
         <li>
             <button>
