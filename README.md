@@ -11,12 +11,18 @@
 </section>
 <!-- NAV BAR -->
 <section id="nav">
-    <button>
-        <a href="#header">Header</a>
-    </button>
-    <button>
-        <a href="#footer">Footer</a>
-    </button>
+    <ul>
+        <li>
+            <button class="button">
+                <a href="#header">Header</a>
+            </button>
+        </li>
+        <li>
+            <button class="button">
+                <a href="#footer">Footer</a>
+            </button>
+        </li>
+    </ul>
 </section>
 <!-- GENERAL SPECIFICATIONS -->
 <section>
