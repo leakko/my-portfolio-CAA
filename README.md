@@ -13,13 +13,13 @@
 <section id="nav">
     <ul>
         <li>
-            <button class="button">
-                <a href="#header">Header</a>
+            <button>
+                <a  class="button" href="#header">Header</a>
             </button>
         </li>
         <li>
-            <button class="button">
-                <a href="#footer">Footer</a>
+            <button>
+                <a class="button" href="#footer">Footer</a>
             </button>
         </li>
     </ul>
