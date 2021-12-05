@@ -245,6 +245,17 @@ footer a:hover {
 .experiences {
   grid-column: 1 / 7;
   padding-right: 20px;
+  position: relative;
+}
+
+.line {
+  width: 3px;
+  height: 65%;
+  top: 150px;
+  left: 33px;
+  background-color: #474559;
+  position: absolute;
+  z-index: -1;
 }
 
 .list-item {
@@ -305,6 +316,12 @@ footer a:hover {
 .education {
   grid-column: 7 / 13;
   padding-left: 40px;
+  position: relative;
+}
+
+.education .line {
+  left: 73px;
+  height: 45%;
 }
 
 .customers {
