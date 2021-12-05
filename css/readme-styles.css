@@ -7,6 +7,15 @@
     margin-bottom:15px;
 }
 
+#nav ul {
+    display: flex;
+    list-style: none;
+}
+
+#nav ul li{
+    margin: 0 5px
+}
+
 /* MEDIA QUERIES */
 
 @media(max-width:500px) {
