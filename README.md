@@ -9,6 +9,21 @@
         This is a Continuous Assesment Activity of the <a href="https://www.uoc.edu/portal/_resources/common/imatges/sala_de_premsa/noticies/2016/202-nova-marca-uoc.jpg">Techniques for Software Application Development Degree</a>
     </p>
 </section>
+<!-- NAV BAR -->
+<section class="nav">
+    <ul>
+        <li>
+            <button>
+                <a href="header">Header</a>
+            </button>
+        </li>
+        <li>
+            <button>
+                <a href="footer">Footer</a>
+            </button>
+        </li>
+    </ul>
+</section>
 <!-- GENERAL SPECIFICATIONS -->
 <section>
         <h1>General Specifications</h1>
@@ -52,7 +67,7 @@
             <!-- 
             HEADER
             -->
-            <h2>Header</h2>
+            <h2 id="header">Header</h2>
             <img 
             src="images/screenshots/header.png"
             id="header"
@@ -151,7 +166,7 @@
                 <!-- 
             FOOTER
             -->
-            <h2>Footer</h2>
+            <h2 id="footer">Footer</h2>
             <img 
             src="images/screenshots/footer.png"
             id="header"
