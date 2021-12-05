@@ -312,17 +312,28 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .customers h1 {
-  margin-bottom: 0;
+  margin-bottom: 25px;
+}
+
+.skewed-box {
+  background-color: #efefef;
+  transform: skew(-30deg);
+  width: 650px;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
 }
 
 blockquote {
   text-align: center;
-  background: url(../images/left-quote.png) no-repeat center 2px/50px, 
-  #efefef;
+  background: url(../images/left-quote.png) no-repeat center 2px/50px;
   padding: 50px 25px 25px 25px;
+  z-index: 2;
 }
 
 blockquote cite {
