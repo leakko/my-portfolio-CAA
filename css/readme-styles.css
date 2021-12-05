@@ -11,10 +11,19 @@
     display: flex;
     list-style: none;
     flex-wrap: wrap;
+    margin: 20px 0;
 }
 
 #nav button {
     margin: 0 5px;
+    color: white;
+    background-color: rgb(44, 44, 83);
+    border-radius: 25%;
+    padding: 5px;
+}
+
+#nav a {
+    color: white;
 }
 
 /* MEDIA QUERIES */
