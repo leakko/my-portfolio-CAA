@@ -313,30 +313,33 @@ footer a:hover {
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin-bottom: 35px;
 }
 
 .customers h1 {
   margin-bottom: 25px;
 }
 
-.skewed-box {
-  background-color: #efefef;
-  transform: skew(-30deg);
-  width: 650px;
-  height: 200px;
-  position: absolute;
-  bottom: 0;
-  z-index: 1;
-}
-
 blockquote {
   text-align: center;
   background: url(../images/left-quote.png) no-repeat center 2px/50px;
   padding: 50px 25px 25px 25px;
-  z-index: 2;
+  position: relative;
 }
 
 blockquote cite {
   font-style: normal;
   font-weight: bold;
+}
+
+blockquote::before {
+  content: "";
+  background-color: #efefef;
+  transform: skew(-30deg);
+  width: 115%;
+  height: 200px;
+  position: absolute;
+  bottom: -20px;
+  left: -50px;
+  z-index: -1;
 }
