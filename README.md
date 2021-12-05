@@ -1,4 +1,6 @@
-<style>
+<link rel="stylesheet" href="css/readme-styles.css">
+
+<!-- <style>
     #screenshot,
     #header {
         width:75%;
@@ -26,7 +28,7 @@
             margin-left:calc(65%/2);
         }
     }
-</style>
+</style> -->
 
 <img src="https://www.uoc.edu/portal/_resources/common/imatges/sala_de_premsa/noticies/2016/202-nova-marca-uoc.jpg" alt="UOC Logo" width="200"/>
 

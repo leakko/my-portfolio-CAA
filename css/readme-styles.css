@@ -1,0 +1,27 @@
+#screenshot,
+    #header {
+        width:75%;
+        margin-left:calc(25%/2);
+        margin-bottom:15px;
+    }
+    @media(max-width:500px) {
+        #screenshot,
+        #header {
+            width:100%;
+            margin: 0;
+        }
+    }
+    @media(min-width:1000px) {
+        #screenshot,
+        #header {
+            width:50%;
+            margin-left:calc(50%/2);
+        }
+    }
+    @media(min-width:2000px) {
+        #screenshot,
+        #header {
+            width:35%;
+            margin-left:calc(65%/2);
+        }
+    }
