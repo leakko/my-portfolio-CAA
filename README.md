@@ -14,12 +14,12 @@
     <ul>
         <li>
             <button>
-                <a href="header">Header</a>
+                <a href="#header">Header</a>
             </button>
         </li>
         <li>
             <button>
-                <a href="footer">Footer</a>
+                <a href="#footer">Footer</a>
             </button>
         </li>
     </ul>
