@@ -171,6 +171,7 @@ footer a:hover {
 
 .about h1 {
   font-size: 40px;
+  color: #212121;
 }
 
 .about h2 {
@@ -353,8 +354,8 @@ blockquote::before {
   content: "";
   background-color: #efefef;
   transform: skew(-30deg);
-  width: 115%;
-  height: 200px;
+  width: 120%;
+  height: 110%;
   position: absolute;
   bottom: -20px;
   left: -50px;

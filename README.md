@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="css/readme-styles.css">
 
-<img src="https://www.uoc.edu/portal/_resources/common/imatges/sala_de_premsa/noticies/2016/202-nova-marca-uoc.jpg" alt="UOC Logo" width="200"/>
+<img src="https://www.uoc.edu/portal/_resources/common/imatges/sala_de_premsa/noticies/2016/202-nova-marca-uoc.jpg" alt="UOC Logo" width="200" id="uoc-logo"/>
 
 <!-- INTRO SECTION -->
 <section>
@@ -22,14 +22,16 @@
                 <a class="button" href="#footer">Footer</a>
             </button>
         </li>
+        <li>
+            <button>
+                <a class="button" href="#about">About Page</a>
+            </button>
+        </li>
     </ul>
 </section>
 <!-- GENERAL SPECIFICATIONS -->
 <section>
         <h1>General Specifications</h1>
-        <img id="screenshot"
-        src="images/screenshots/index.png"
-        >
             <ul>
                 <li>
                     <p>
@@ -70,7 +72,6 @@
             <h2 id="header">Header</h2>
             <img 
             src="images/screenshots/header.png"
-            id="header"
             >
                 <ul>
                     <li>
@@ -163,13 +164,12 @@
     </pre>
                     </li>
                 </ul>
-                <!-- 
+        <!-- 
             FOOTER
             -->
             <h2 id="footer">Footer</h2>
             <img 
             src="images/screenshots/footer.png"
-            id="header"
             >
                 <ul>
                     <li>
@@ -207,6 +207,41 @@
     </pre>
                     </li>
                 </ul>
+        <!-- 
+            'ABOUT' PAGE MAIN
+            -->
+            <h2 id="about">About Page</h2>
+            <img 
+            src="images/screenshots/about-page.png"
+            >
+            <ul>
+                <li>
+                    The <code>&#60;main&#62;</code> section of 'About' page is composed of five <code>&#60;section&#62;</code>s
+                    <ul>
+                        <li>Presentation (top left)</li>
+                        <li>Picture (top right)</li>
+                        <li>Experiences (middle left)</li>
+                        <li>Education (middle right)</li>
+                        <li>Customers experience (bottom)</li>
+                    </ul>
+                </li>
+                <li>
+                    In the prensentation <code>&#60;section&#62;</code> we have two <code>&#60;p&#62;</code>s, with a <code>&#60;h1&#62;</code> between them, and below all of them, a <code>&#60;div&#62;</code> containing two <code>&#60;a&#62;</code>s, each containing a <code>&#60;button&#62;</code> inside.
+                </li>
+                <li>
+                    The picture <code>&#60;section&#62;</code> is just a container for an <code>&#60;img&#62;</code>.
+                </li>
+                <li>
+                    Both Experiences and Education <code>&#60;section&#62;</code>s are marked up in a similar way.
+                    First they have a <code>&#60;h2&#62;</code> and then a a div that represents the line that will go through the dates' circles.
+                    Finally a collection of <code>&#60;div&#62;</code>s, where each one represents an experience/education item.
+                    Inside each of them we have to <code>&#60;div&#62;</code>s, one containing the date, and the other, the rest of the information.
+                    This second <code>&#60;div&#62;</code> is composed of another <code>&#60;div&#62;</code> for the headings, and a <code>&#60;p&#62;</code> for the experience/education description.
+                </li>
+                <li>
+                    Finally, at the bottom of the page it's the curstomers opinion <code>&#60;section&#62;</code>, that it's just a <code>&#60;h1&#62;</code>, and below, a <code>&#60;blockquote&#62;</code>, with a <code>&#60;p&#62;</code> and a <code>&#60;cite&#62;</code> inside.
+                </li>
+            </ul>
 </section>
 <section>
 

@@ -1,7 +1,6 @@
 /* GENERAL */
 
-#screenshot,
-#header {
+img:not(#uoc-logo) {
     width:75%;
     margin-left:calc(25%/2);
     margin-bottom:15px;
@@ -19,22 +18,19 @@
 /* MEDIA QUERIES */
 
 @media(max-width:500px) {
-    #screenshot,
-    #header {
+    img:not(#uoc-logo) {
         width:100%;
         margin: 0;
     }
 }
 @media(min-width:1000px) {
-    #screenshot,
-    #header {
+    img:not(#uoc-logo) {
         width:50%;
         margin-left:calc(50%/2);
     }
 }
 @media(min-width:2000px) {
-    #screenshot,
-    #header {
+    img:not(#uoc-logo) {
         width:35%;
         margin-left:calc(65%/2);
     }
