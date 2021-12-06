@@ -429,6 +429,7 @@
                 <li>
                     We make the each experience/education item a flexbox, so the date is placed next to the information itself.
                     Then we make both divs align to the left.
+    <pre>
         <code>
             .list-item {
                 display: flex;
