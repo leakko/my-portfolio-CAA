@@ -440,6 +440,7 @@
                 </li>
                 <li>
                     Now we give a margin to all items except the first one, so we give space between them.
+    <pre>
         <code>
             .list-item:nth-child(n+2) {
                 margin-top: 35px;
@@ -449,6 +450,7 @@
                 </li>
                 <li>
                     Now we give a margin to all items except the first one, so we give space between them.
+    <pre>
         <code>
             .list-item:nth-child(n+2) {
                 margin-top: 35px;
@@ -458,6 +460,7 @@
                 </li>
                 <li>
                     We remove the default top margins from headings.
+    <pre>
         <code>
             .list-item h2,
             .list-item h3,
@@ -470,6 +473,7 @@
                 <li>
                     We turn the title's section of each experience/education into a flexbox, so the company/school get placed next to the experience/education main title.
                     Then, we align them to the center in the y-axis
+    <pre>
         <code>
             .list-item .title {
                 display: flex;
@@ -480,6 +484,7 @@
                 </li>
                 <li>
                     Now we give some space between the experience/education item title and the company/school name., and we also remove the bottom margin.
+    <pre>
         <code>
             .list-item .title h3 {
                 margin-right: 15px;
@@ -490,6 +495,7 @@
                 </li>
                 <li>
                     Regarding the company/school name, we give it an specific font colot, we make it smaller, also remove the bottom margin, and finally, we set the position to relative to be able to move it down a little bit.
+    <pre>    
         <code>
             .list-item .title h4 {
                 color: #474559;
@@ -505,6 +511,7 @@
                     Talking about the dates' circles, we give them a blue background, add the same padding to all sides of the date to make the date's <code>&#60;div&#62;</code> bigger but squared.
                     Now we set the <i>border-radius</i> to 50% in order to create a circle.
                     We set the font color to white, make the font semi-bold and add some margin-right to give space between the circle and the item information. 
+    <pre>
         <code>
             .date {
                 background-color: #0019ff;
@@ -519,7 +526,8 @@
                 </li>
                 <li>
                     We give some margin at the top and bottom of the <code>&#60;p&#62;</code> to give more height to the <code>&#60;div&#62;</code>, turning it into an square. 
-        <code>
+    <pre>    
+        code>
             .date p {
                 margin: 10px 0;
             }
@@ -528,6 +536,7 @@
                 </li>
                 <li>
                     Then we remove the default color of the <i>toolplate</i> <code>&#60;a&#62;</code> and the default underline.
+    <pre>    
         <code>
             .list-item a {
                 color: unset;
@@ -539,6 +548,7 @@
                 <li>
                     Talking specially about the Education <code>&#60;section&#62;</code>, we place it in the right half of the second row.
                     Then we give some space between this <code>&#60;section&#62;</code> and the Experiences one.
+    <pre>    
         <code>
             .education {
                 grid-column: 7 / 13;
@@ -550,6 +560,7 @@
                 </li>
                 <li>
                     We place this second line to go exactly behind the Education dates.
+    <pre>    
         <code>
             .education .line {
                 left: 73px;
@@ -564,6 +575,7 @@
                     Then we place them in the center of the <code>&#60;section&#62;</code>.
                     Now we set it's position to relative, in order to control the position of absolute positioned nested elements better.
                     Finally we add some space between this <code>&#60;section&#62;</code> and the <code>&#60;footer&#62;</code>.
+    <pre>                
         <code>
             .customers {
                 grid-column: 3 / 11;
@@ -578,6 +590,7 @@
                 </li>
                  <li>
                     We add some space between the header and the blockquote.
+    <pre>    
         <code>
             .customers h2 {
                 margin-bottom: 25px;
@@ -588,6 +601,7 @@
                 <li>
                     Talking abput the blockquote, we align its text in the center, we set the left quote image as a background-image in the top-center, we add some space inside the blockquote box to make it bigger.
                     Finally, we set the position to relative to control the position of absolute positioned nested elements better.
+    <pre>                
         <code>
             blockquote {
                 text-align: center;
@@ -600,6 +614,7 @@
                 </li>
                 <li>
                     We turn the name of the quote cite into bold, and remove the default italics style.
+    <pre>    
         <code>
             blockquote cite {
                 font-style: normal;
@@ -615,6 +630,7 @@
                     We set its width and height using percentage values to make the box responsive if the viewport shrinks.
                     Then, we set the position to absolute, so that it gets out of the page flow.
                     Then we place it behind the blockquote text using the <i>bottom</i> and <i>left properties</i>, and finally, we make it place in a deeper layer, avoiding that it covers the text.
+    <pre>
         <code>
             blockquote::before {
                 content: "";
