@@ -242,7 +242,7 @@
                     Finally, at the bottom of the page it's the curstomers opinion <code>&#60;section&#62;</code>, that it's just a <code>&#60;h1&#62;</code>, and below, a <code>&#60;blockquote&#62;</code>, with a <code>&#60;p&#62;</code> and a <code>&#60;cite&#62;</code> inside.
                 </li>
                 <li>
-                        Regarding CSS, we turn the <code>&#60;main&#62;</code>'s informtion container into a gird, and the split this grid in 12 columns of the same width. Then we add some space at the top and bottom.
+                        Regarding CSS, we turn the <code>&#60;main&#62;</code>'s information container into a gird, and the split this grid in 12 columns of the same width. Then we add some space at the top and bottom.
                         Finally, we give <i>50px</i> of space between the three rows we will create.
     <pre>
         <code>
