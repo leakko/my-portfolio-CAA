@@ -678,7 +678,7 @@
                     Portfolio <code>&#60;main&#62;</code> element is composed of one <code>&#60;div&#62;</code> for the heading and two <code>&#60;section&#62;</code>s, one for the table, and one for the images.
                 </li>
                 <li>
-                    Starting with the heading's <code>&#60;div&#62;</code>, inside we have two <code>&#60;div&#62;</code>s, one for each line, and a <code>&#60;h1&#62;</code> for the heading itself.
+                    Starting with the heading's <code>&#60;div&#62;</code>, we have two <code>&#60;div&#62;</code>s, one for each line, and a <code>&#60;h1&#62;</code> for the heading itself.
                 </li>
                 <li>
                     Turning to the first <code>&#60;section&#62;</code>, we have the <code>&#60;table&#62;</code> as the direct child. This <code>&#60;table&#62;</code> is composed of a <code>&#60;caption&#62;</code> (to tell users what is the table about), <code>&#60;thead&#62;</code> (table head) and <code>&#60;tbody&#62;</code> (table body).
