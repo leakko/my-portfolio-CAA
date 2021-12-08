@@ -428,7 +428,7 @@
         <code>
             .line {
                 width: 3px;
-                height: 65%;
+                height: 70%;
                 top: 150px;
                 left: 33px;
                 background-color: #474559;
@@ -576,7 +576,7 @@
         <code>
             .education .line {
                 left: 73px;
-                height: 45%;
+                height: 40%;
             }
         </code>
     </pre>
