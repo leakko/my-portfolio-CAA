@@ -366,3 +366,118 @@ blockquote::before {
 
 /* PORTFOLIO PAGE MAIN */
 
+.portfolio {
+  margin: 50px 0;
+}
+
+.portfolio .title {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  margin: 50px 0;
+}
+
+.portfolio .title h1 {
+  margin: 0 20px;
+  font-size: 64px;
+}
+
+
+.horizontal-line {
+  height: 5px;
+  width: 100%;
+  background-color: black;
+}
+
+.portfolio .title > * {
+  display: flex;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table *:not(caption) {
+  color: white;
+  text-decoration: none;
+}
+
+caption {
+  padding: 25px 0;
+  font-size: 30px;
+}
+
+tr > * {
+  padding: 15px;
+}
+
+th {
+  text-align: start;
+}
+
+thead {
+  background-color: #55608f;
+}
+
+tbody {
+  background: linear-gradient(45deg, #6DB2B1, #7E599C);
+}
+
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+table a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+.images {
+  margin: 100px 0;
+}
+
+.images > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images > div > div {
+  width: calc((100% - 60px) / 3);
+  margin: 0 15px 25px 15px;
+}
+
+.images > div > div:nth-child(3n+1) {
+  margin-left: 0;
+}
+.images > div > div:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+.images > div > div img {
+  width: 100%;
+  object-fit: contain;
+  opacity: 70%;
+  filter: grayscale(100%);
+  transition: all 1s;
+}
+
+.images > div > div img:hover {
+  cursor: pointer;
+  opacity: 100%;
+  filter: none;
+  overflow: hidden;
+}
+
+
+h3 {
+  margin: 10px 0 5px 0;
+}
+
+.images > div > div p {
+  margin-top: 0;
+  font-style: italic;
+}
