@@ -681,9 +681,9 @@
                     Starting with the heading's <code>&#60;div&#62;</code>, we have two <code>&#60;div&#62;</code>s, one for each line, and a <code>&#60;h1&#62;</code> for the heading itself.
                 </li>
                 <li>
-                    Turning to the first <code>&#60;section&#62;</code>, we have the <code>&#60;table&#62;</code> as the direct child. This <code>&#60;table&#62;</code> is composed of a <code>&#60;caption&#62;</code> (to tell users what is the table about), <code>&#60;thead&#62;</code> (table head) and <code>&#60;tbody&#62;</code> (table body).
+                    Turning to the first <code>&#60;section&#62;</code>, we have the <code>&#60;table&#62;</code> as the direct child. This <code>&#60;table&#62;</code> is composed of a <code>&#60;caption&#62;</code> (to tell users what the table is about), <code>&#60;thead&#62;</code> (table head) and <code>&#60;tbody&#62;</code> (table body).
                     The <code>&#60;thead&#62;</code> have just one <code>&#60;tr&#62;</code> with three <code>&#60;th&#62;</code>s, each with an <i>scope</i> attribute to indicate that they are headings of columns.
-                    In the <code>&#60;tbody&#62;</code>we have 4 rows, and inside each row, 3 <code>&#60;td&#62;</code> (table data). The last of each <code>&#60;td&#62;</code> have one anchor inside that links to each project wesite. 
+                    In the <code>&#60;tbody&#62;</code>we have 4 rows, and inside each row, 3 <code>&#60;td&#62;</code> (table data. In the last <code>&#60;td&#62;</code> of each row have one anchor that links to each project wesite. 
                 </li>
                 <li>
                     Finally we have the <code>&#60;section&#62;</code> that contains the images.
