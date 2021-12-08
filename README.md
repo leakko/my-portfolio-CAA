@@ -59,8 +59,20 @@
 <pre>
     <code>
         .container {
-            max-width: 1000px;
+            max-width: 1140px;
             margin: 0 auto;
+        }
+    </code>
+</pre>
+                </li>
+                <li>
+                    <p>
+                        We use the <code>&#60;p&#62;</code> as the default element to wrap text in the website, so by setting its size here, we set the default <i>font-size</i> of the document.
+                    </p>
+<pre>
+    <code>
+        p {
+            font-size: 18px;
         }
     </code>
 </pre>
@@ -101,7 +113,7 @@
             header {
                 font-weight: bold;
                 border-bottom: 1px solid rgba(128, 128, 128, 0.5);
-                padding: 0 10px;
+                padding: 15px 10px;
                 font-size: 1.1rem;
             }
         </code>
@@ -600,7 +612,8 @@
                 </li>
                 <li>
                     Talking abput the blockquote, we align its text in the center, we set the left quote image as a background-image in the top-center, we add some space inside the blockquote box to make it bigger.
-                    Finally, we set the position to relative to control the position of absolute positioned nested elements better.
+                    We set the position to relative to control the position of absolute positioned nested elements better.
+                    Finally we make the font a little bigger.
     <pre>                
         <code>
             blockquote {
@@ -608,6 +621,7 @@
                 background: url(../images/left-quote.png) no-repeat center 2px/50px;
                 padding: 50px 25px 25px 25px;
                 position: relative;
+                font-size: 20px;
             }
         </code>
     </pre>
@@ -640,7 +654,7 @@
                 height: 110%;
                 position: absolute;
                 bottom: -20px;
-                left: -50px;
+                left: -65px;
                 z-index: -1;
             }
         </code>
