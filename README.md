@@ -27,6 +27,11 @@
                 <a class="button" href="#about">About Page</a>
             </button>
         </li>
+        <li>
+            <button>
+                <a class="button" href="#portfolio">Portfolio Page</a>
+            </button>
+        </li>
     </ul>
 </section>
 <!-- GENERAL SPECIFICATIONS -->
@@ -659,6 +664,31 @@
             }
         </code>
     </pre>
+                </li>
+            </ul>
+            <!-- 
+            'PORTFOLIO' PAGE MAIN
+            -->
+            <h1 id="portfolio">Portfolio Page</h1>
+            <img 
+            src="images/screenshots/portfolio.png"
+            >
+            <ul>
+                <li>
+                    Portfolio <code>&#60;main&#62;</code> element is composed of one <code>&#60;div&#62;</code> for the heading and two <code>&#60;section&#62;</code>s, one for the table, and one for the images.
+                </li>
+                <li>
+                    Starting with the heading's <code>&#60;div&#62;</code>, inside we have two <code>&#60;div&#62;</code>s, one for each line, and a <code>&#60;h1&#62;</code> for the heading itself.
+                </li>
+                <li>
+                    Turning to the first <code>&#60;section&#62;</code>, we have the <code>&#60;table&#62;</code> as the direct child. This <code>&#60;table&#62;</code> is composed of a <code>&#60;caption&#62;</code> (to tell users what is the table about), <code>&#60;thead&#62;</code> (table head) and <code>&#60;tbody&#62;</code> (table body).
+                    The <code>&#60;thead&#62;</code> have just one <code>&#60;tr&#62;</code> with three <code>&#60;th&#62;</code>s, each with an <i>scope</i> attribute to indicate that they are headings of columns.
+                    In the <code>&#60;tbody&#62;</code>we have 4 rows, and inside each row, 3 <code>&#60;td&#62;</code> (table data). The last of each <code>&#60;td&#62;</code> have one anchor inside that links to each project wesite. 
+                </li>
+                <li>
+                    Finally we have the <code>&#60;section&#62;</code> that contains the images.
+                    Inside, we have a <code>&#60;h2&#62;</code> and a <code>&#60;div&#62;</code>. This <code>&#60;div&#62;</code> will be turn into a flex box so we can make the images to place automatically in rows.
+                    Inside this flexbox, each item is a <code>&#60;div&#62;</code>. Inside this <code>&#60;div&#62;</code>, we have another <code>&#60;div&#62;</code> wrapping an image, and outside the image-wrapper, one <code>&#60;h3&#62;</code> and one <code>&#60;p&#62;</code> to mark up the information below each image.
                 </li>
             </ul>
 </section>
