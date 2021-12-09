@@ -408,7 +408,7 @@ caption {
   font-size: 30px;
 }
 
-tr > * {
+tr > :is(th, td) {
   padding: 15px;
 }
 

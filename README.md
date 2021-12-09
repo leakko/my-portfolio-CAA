@@ -690,6 +690,270 @@
                     Inside, we have a <code>&#60;h2&#62;</code> and a <code>&#60;div&#62;</code>. This <code>&#60;div&#62;</code> will be turn into a flex box so we can make the images to place automatically in rows.
                     Inside this flexbox, each item is a <code>&#60;div&#62;</code>. Inside this <code>&#60;div&#62;</code>, we have another <code>&#60;div&#62;</code> wrapping an image, and outside the image-wrapper, one <code>&#60;h3&#62;</code> and one <code>&#60;p&#62;</code> to mark up the information below each image.
                 </li>
+                <li>
+                    Regarding styles, we start by giving some spacing at the top and bottom of the <code>&#60;main&#62;</code> element.
+    <pre>
+        <code>
+            .portfolio {
+                margin: 50px 0;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                    We turn the title's <code>&#60;div&#62;</code> into a grid, so in the next css rule we can set the central <code>&#60;h1&#62;</code> to take up ony the space its content needs, and the lines' <code>&#60;div&#62;</code>s the rest of the available container's space.
+                    Then we give some margin at the top and bottom.
+    <pre>
+        <code>
+            .portfolio .title {
+                display: grid;
+                grid-template-columns: 1fr auto 1fr;
+                margin: 50px 0;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                    We give some space between the heading text and its lines and we also set the font's size.
+    <pre>
+        <code>
+            .portfolio .title h1 {
+                margin: 0 20px;
+                font-size: 64px;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                    No it's time to build the lines up. We set their height to 5px, and their width to the 100% of the assigned grid column.
+                    Finally we turn them black.
+    <pre>
+        <code>
+            .horizontal-line {
+                height: 5px;
+                width: 100%;
+                background-color: black;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                    Now its time to horizontally align all the elements of the heading section (lines and the heading itself), so we turn each grid cell into a flexbox (the two <code>&#60;div&#62;</code>s and the <code>&#60;h1&#62;</code>), and then vertically align everything inside each grid cell to the center. 
+    <pre>
+        <code>
+            .portfolio .title > * {
+                display: flex;
+                align-items: center;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                    Regarding the table, the direct child of the first <code>&#60;section&#62;</code>, we set its width to the 100% of the container's space, and then we make the borders of each table cell collapse, so there is not space between them.
+    <pre>
+        <code>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                    Them we select every element inside the table but the caption, so we can set all its text to white and remove the text decorations (f.ex underlined).
+    <pre>
+        <code>
+            table *:not(caption) {
+                color: white;
+                text-decoration: none;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                    We give some space at the top and bottom of the <code>&#60;caption&#62;</code>, and make its texr bigger.
+    <pre>
+        <code>
+            caption {
+                padding: 25px 0;
+                font-size: 30px;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                    Now we use a very up-to-date and trendy pseudo-class, that will select both <code>&#60;th&#62;</code> and <code>&#60;th&#62;</code> that are direct childs of a <code>&#60;tr&#62;</code>, then we give them some padding, to make every cell bigger.
+    <pre>
+        <code>
+            tr > :is(th, td) {
+                padding: 15px;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                    Now we replace the default alignment of the table headings so all the cells' text are at the left.
+    <pre>
+        <code>
+            th {
+                text-align: start;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   We set the background of the <code>&#60;thead&#62;</code> to be a solid color, and the <code>&#60;tbody&#62;</code> one to be a linear gradient that starts at the left and ends at the right.
+    <pre>
+        <code>
+            thead {
+                background-color: #55608f;
+            }
+            tbody {
+                background: linear-gradient(45deg, #6DB2B1, #7E599C);
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   Now we give some interactivity to the table rows, so when the user hovers on them their background gets brighter.
+    <pre>
+        <code>
+            tbody tr:hover {
+                background-color: rgba(255, 255, 255, 0.3);
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   In the same way, we add interactivity to the links of the last column, so when the user hovers them, they get underlined.
+    <pre>
+        <code>
+            table a:hover {
+                text-decoration: underline;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   Now we set the size of the heading of the images section.
+    <pre>
+        <code>
+            h2 {
+                font-size: 35px;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                  We set some margin at the top and bottom of this last <code>&#60;section&#62;</code>.
+    <pre>
+        <code>
+            .images {
+                margin: 100px 0;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                  Then we make the <code>&#60;div&#62;</code> that contains the images items a lexbox, and set the <i>flex-wrap</i> property to <i>black</i>, so each new image and description get placed at the right of the previous one, and when it doesn't fit in the row, it get place as the first item in the next one.
+    <pre>
+        <code>
+            .images > div {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                  Then we select each flexbox item (a <code>&#60;div&#62;</code> that contains an image, a title and a description), and set its width using a mathematical function that will make that each row is filled with 3 items.
+                  Then we add some space between the cards and hide the part of the image that overflows the item's borders.
+    <pre>
+        <code>
+            .images > div > div {
+                width: calc((100% - 60px) / 3);
+                margin: 0 15px 25px 15px;
+                overflow: hidden;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                  We remove the left padding of the first item of each row and the right padding of the last one, so each row starts and ends just on the main container borders.
+    <pre>
+        <code>
+            .images > div > div:nth-child(3n+1) {
+                margin-left: 0;
+            }
+            .images > div > div:nth-child(3n+3) {
+                margin-right: 0;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   Now, regarding the <code>&#60;div&#62;</code> inside each item that wraps each <code>&#60;img&#62;</code>, we set its width to 100% of the item's width.
+                   Then we set a fixed height and an <i>overflow: hidden</i> so that when the image scales up, it doesn't take up the space of the rest elements.
+    <pre>
+        <code>
+            .img-wrapper {
+                width: 100%;
+                height: 242px;
+                overflow: hidden;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   Talking about each image tag itslef, we set its initial state to take up all the img-wrapper's space and its opacity to 70%.
+                   We also turn it into a greyscale image.
+                   Finally, we set that that all transitions applied to the images will take up 1 second to complete.
+    <pre>
+        <code>
+            .images > div > div > div > img {
+                width: 100%;
+                object-fit: contain;
+                opacity: 70%;
+                filter: grayscale(100%);
+                transition: all 1s;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   Now we add interactivity to the images: when the user hovers them, their opacity will raised to 100%, their color will be back, and they will be scaled up a 20%, but widhout overflowing the img-wrapper, as we set earlier.
+    <pre>
+        <code>
+            .images > div > div img:hover {
+                cursor: pointer;
+                opacity: 100%;
+                filter: none;
+                transform: scale(1.2);
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   We set the top and bottom margins of each image title.
+    <pre>
+        <code>
+            h3 {
+                margin: 10px 0 5px 0;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   Finally we remove the default margin-top of <code>&#60;p&#62;</code>s and set their font style to italic.
+    <pre>
+        <code>
+            .images > div > div p {
+                margin-top: 0;
+                font-style: italic;
+            }
+        </code>
+    </pre>
+                </li>
             </ul>
 </section>
 <section>
