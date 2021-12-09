@@ -705,7 +705,8 @@
                     Then we give some margin at the top and bottom.
     <pre>
         <code>
-            .portfolio .title {
+            .portfolio .title,
+            .contact .title {
                 display: grid;
                 grid-template-columns: 1fr auto 1fr;
                 margin: 50px 0;
@@ -717,7 +718,8 @@
                     We give some space between the heading text and its lines and we also set the font's size.
     <pre>
         <code>
-            .portfolio .title h1 {
+            .portfolio .title h1,
+            .contact .title h1 {
                 margin: 0 20px;
                 font-size: 64px;
             }
@@ -741,7 +743,8 @@
                     Now its time to horizontally align all the elements of the heading section (lines and the heading itself), so we turn each grid cell into a flexbox (the two <code>&#60;div&#62;</code>s and the <code>&#60;h1&#62;</code>), and then vertically align everything inside each grid cell to the center. 
     <pre>
         <code>
-            .portfolio .title > * {
+            .portfolio .title > *,
+            .contact .title > * {
                 display: flex;
                 align-items: center;
             }
