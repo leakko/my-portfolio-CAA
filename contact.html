@@ -41,7 +41,7 @@
           </div>
         </div>
         <div class="content">
-          <div>
+          <div class="contact-section">
             <iframe
               width="450"
               height="315"
@@ -54,16 +54,44 @@
               <h3>Say hello</h3>
               <div class="contact-info">
                 <div class="direct">
-                  <p>010 020 0960</p>
-                  <p>hello@company.co</p>
+                  <p><a href="tel:010-020-0960">010 020 0960</a></p>
+                  <p><a href="mailto:hello@company.co">hello@company.co</a></p>
                 </div>
                 <div class="social">
-                  <p>Dribble</p>
-                  <p>Instagram</p>
-                  <p>Youtube</p>
+                  <p><a href="https://dribbble.com/" target="_blank" title="Discover the world’s top designers & creatives">Dribble</a></p>
+                  <p><a href="https://www.instagram.com/" target="_blank" title="Instagram home page">Instagram</a></p>
+                  <p><a href="https://www.youtube.com/" target="_blank" title="YouTube home page">Youtube</a></p>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="form">
+            <form>
+              <h2>Interested to work together? Let's talk</h2>
+              <p>
+                <label for="name">Your name</label>
+                <input type="text" required id="name" name="name">
+              </p>
+              <p>
+                <label for="email">Email</label>
+                <input type="email" required id="email" name="email">
+              </p>
+              <p>
+                <label for="phone">Phone</label>
+                <input type="tel" required id="phone" name="phone">
+              </p>
+              <p>
+                <label for="message">Message</label>
+                <textarea rows="6" required id="message" name="message"></textarea>
+              </p>
+              <p>
+                <input type="checkbox" id="consent" required>  
+                <label for="consent" id="checkbox-label">
+                  I have read and accept the <a href="#">Terms and conditions</a>
+                </label>
+              </p>
+              <button type="submit">Send</button>
+            </form>
           </div>
         </div>
       </div>
@@ -78,5 +106,7 @@
     </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/custom.js"></script>
+    <!-- Custom.js was not working while testing the form, so alum.js was implemented to try another aproach -->
+    <script src="js/alumn.js"></script>
   </body>
 </html>

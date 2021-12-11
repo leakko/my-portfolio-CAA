@@ -494,8 +494,13 @@ h3 {
   padding: 20px;
 }
 
+.contact {
+  margin-bottom: 100px;
+}
+
 .content {
   display: flex;
+  justify-content: space-between;
 }
 
 iframe,
@@ -513,6 +518,10 @@ iframe * {
 .contact-info {
   display: flex;
   justify-content: space-between;
+}
+
+.contact-info a:hover {
+  color: #72edca;
 }
 
 .direct p:first-child::before {
@@ -533,4 +542,87 @@ iframe * {
 
 .social p:nth-child(3)::before {
   content: '\ebe8';
+}
+
+.social p {
+  margin: 5px 0;
+}
+
+.social p:first-child {
+  margin-top: 12px;
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+}
+
+.form {
+  width: 55%;
+}
+
+input:not(input[type="checkbox"]),
+textarea {
+  width: 100%;
+  position: relative;
+  bottom: 35px;
+  left: 1px;
+}
+
+input:not(input[type="checkbox"]) {
+  height: 40px;
+}
+
+label:not(#checkbox-label) {
+  position: relative;
+  left: 10px;
+  z-index: 1;
+}
+
+p:nth-child(1n + 2) input,
+textarea {
+  margin: 5px 0;
+}
+
+form p:nth-child(5) {
+  height: 85px;
+}
+
+.contact label a {
+  color: #0019ff;
+}
+
+.contact h2 {
+  margin-top: 0;
+}
+
+.is-focused label {
+  bottom: 12px;
+  font-size: 15px;
+  left: 5px !important;
+}
+
+textarea {
+  padding-top: 15px
+}
+
+input:focus ,
+textarea:focus {
+  outline: none;
+  border: 2px solid #0019ff;
+  border-radius: 5px;
+}
+
+.contact button {
+  border: none;
+  padding: 15px 75px;
+  font-weight: bold;
+  background-color: #72edca;
+  border-radius: 25px;
+}
+
+.contact button:hover {
+  background-color: #0019ff;
+  cursor: pointer;
+  color: white;
 }
