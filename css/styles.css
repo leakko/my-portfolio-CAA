@@ -24,7 +24,7 @@
 */
  
 .contact .contact-info p::before,
-.presentation a:first-child button::before {
+.presentation a:first-child::before {
   font-family: "unicons";
   font-style: normal;
   font-weight: normal;
@@ -191,30 +191,26 @@ footer a:hover {
   grid-column: 1 / 8;
 }
 
-.presentation button {
+.presentation a {
   padding: 10px 20px;
   border-radius: 25px;
   background-color: #474559;
   color: white;
-  border-style: none;
   font-weight: bold;
-}
-
-.presentation a {
-  color: white;
+  font-size: 15px;
   text-decoration: none;
 }
 
-.presentation a:first-child button {
+.presentation a:first-child {
   margin-right: 10px;
   width: fit-content;
 }
 
-.presentation a:first-child button::before {
+.presentation a:first-child:before {
   content: '\e9b8';
 }
 
-.presentation button:hover {
+.presentation a:hover {
   cursor: pointer;
   background: #0019ff;
 }

@@ -58,7 +58,7 @@
                 </li>
                 <li>
                     <p> 
-                        Using <i>@font-face</i>, we let the <a href="https://fontawesome.com/">Font Awesome</a> icons ready to use when using the font-family property with value <i>unicons</i>
+                        Using <i>@font-face</i>, we let the <a href="https://fontawesome.com/">Font Awesome</a> icons ready to use when using the font-family property with value <i>unicons</i>-.
                     </p>
 <pre>
     <code>
@@ -73,44 +73,17 @@
             font-weight: normal;
             font-style: normal;
         }
-        .contact .contact-info p::before,
-        .presentation a:first-child button::before {
-            font-family: "unicons";
-            font-style: normal;
-            font-weight: normal;
-            speak: none;
-            display: inline-block;
-            text-decoration: inherit;
-            width: 1em;
-            margin-right: .2em;
-            text-align: center;
-            /* For safety - reset parent styles, that can break glyph codes*/
-            font-variant: normal;
-            text-transform: none;
-            /* fix buttons height, for twitter bootstrap */
-            line-height: 1em;
-            /* Animation center compensation - margins should be symmetric */
-            /* remove if not needed */
-            margin-left: .2em;
-            /* you can be more comfortable with increased icons size */
-            /* font-size: 120%; */
-            /* Font smoothing. That was taken from TWBS */
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            /* Uncomment for 3D effect */
-            /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-        }
     </code>
 </pre>
                 </li>
                 <li>
                     <p> 
-                        Now we use the psudo-element <i>::before</i> to create an element as a first child of the elements of the website where we will need to use icon, that are, the section with contact information below the Google Maps' Iframe in the Contact Page, and the Download resume button in the About page.
+                        Now we use the psudo-element <i>::before</i> to create an element as a first child of the elements of the website where we will need to use icon, that are, the section with contact information below the Google Maps' iframe in the Contact Page, and the Download resume button in the About page.
                     </p>
 <pre>
     <code>
         .contact .contact-info p::before,
-        .presentation a:first-child button::before {
+        .presentation a:first-child::before {
             font-family: "unicons";
             font-style: normal;
             font-weight: normal;
@@ -403,26 +376,16 @@
                        Then we give styles to the buttons of this section.
                        First we make them bigger using <i>padding</i>.
                        Then we make them rounded and set the color of background and the font.
-                       We remove the default border-style of HTML buttons, and finally, make he text inside the buttons bold.
+                       We make the text inside the buttons bold, set the font-size and remove the underline of anchors.
     <pre>
         <code>
-            .presentation button {
+            .presentation a {
                 padding: 10px 20px;
                 border-radius: 25px;
                 background-color: #474559;
                 color: white;
-                border-style: none;
                 font-weight: bold;
-            }
-        </code>
-    </pre>
-                </li>
-                <li>
-                       We remove the default styles of <code>&#60;a&#62;</code>s.
-    <pre>
-        <code>
-            .presentation a {
-                color: white;
+                font-size: 15px;
                 text-decoration: none;
             }
         </code>
@@ -434,7 +397,7 @@
                        Then we set the width of the buttom to be able to contain all its content.
     <pre>
         <code>
-            .presentation a:first-child button {
+            .presentation a:first-child {
                 margin-right: 10px;
                 width: fit-content;
             }
@@ -445,7 +408,7 @@
                        We insert the <a href="https://fontawesome.com/">Font Awesome</a> at the beginning of the button.
     <pre>
         <code>
-            .presentation a:first-child button::before {
+            .presentation a:first-child:before {
                 content: '\e9b8';
             }
         </code>
@@ -455,7 +418,7 @@
                        Finally we add some interactivity to buttons. When the user hovers them, the cursor will turn into a pointer, and the background color will change.
     <pre>
         <code>
-            .presentation button:hover {
+            .presentation a:hover {
                 cursor: pointer;
                 background: #0019ff;
             }
