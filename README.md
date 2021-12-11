@@ -825,10 +825,12 @@
                 </li>
                 <li>
                     Now we use a very up-to-date and trendy pseudo-class, that will select both <code>&#60;th&#62;</code> and <code>&#60;th&#62;</code> that are direct childs of a <code>&#60;tr&#62;</code>, then we give them some padding, to make every cell bigger.
+                    We also prevent the cursor from turning into <i>text</i> type when hovering <code>&#60;td&#62;</code>s and <code>&#60;th&#62;</code>s.
     <pre>
         <code>
             tr > :is(th, td) {
                 padding: 15px;
+                cursor: default;
             }
         </code>
     </pre>
