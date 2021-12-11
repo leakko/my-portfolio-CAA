@@ -952,7 +952,7 @@
                    Finally, we set that that all transitions applied to the images will take up 1 second to complete.
     <pre>
         <code>
-            .images > div > div > div > img {
+           .images > div > div > div  img {
                 width: 100%;
                 object-fit: contain;
                 opacity: 70%;
