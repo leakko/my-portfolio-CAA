@@ -23,7 +23,8 @@
 }
 */
  
- .contact-info a:before{
+.contact .contact-info p::before,
+.presentation a:first-child button::before {
   font-family: "unicons";
   font-style: normal;
   font-weight: normal;
@@ -206,23 +207,16 @@ footer a:hover {
 
 .presentation a:first-child button {
   margin-right: 10px;
-  padding-left: 40px;
-  background: 
-  url(../images/download.png) no-repeat 20px center/12px,
-  #474559
-  ;
+  width: fit-content;
+}
+
+.presentation a:first-child button::before {
+  content: '\e9b8';
 }
 
 .presentation button:hover {
   cursor: pointer;
   background: #0019ff;
-}
-
-.presentation a:first-child button:hover {
-  background: 
-  url(../images/download.png) no-repeat 20px center/12px,
-  #0019ff
-  ;
 }
 
 .presentation p:first-child {
@@ -490,4 +484,53 @@ h3 {
 .images > div > div p {
   margin-top: 0;
   font-style: italic;
+}
+
+/* CONTACT PAGE MAIN */
+
+.iframe-footer {
+  background-color: #474559;
+  color: white;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+}
+
+iframe,
+iframe * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.contact h3 {
+  margin-top: 0;
+  font-size: 35px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.direct p:first-child::before {
+  content: '\eaca';
+}
+
+.direct p:nth-child(2)::before {
+  content: '\e992';
+}
+
+.social p:first-child::before {
+  content: '\e96e';
+}
+
+.social p:nth-child(2)::before {
+  content: '\ea3a';
+}
+
+.social p:nth-child(3)::before {
+  content: '\ebe8';
 }

@@ -57,6 +57,89 @@
 </pre>
                 </li>
                 <li>
+                    <p> 
+                        Using <i>@font-face</i>, we let the <a href="https://fontawesome.com/">Font Awesome</a> icons ready to use when using the font-family property with value <i>unicons</i>
+                    </p>
+<pre>
+    <code>
+        @font-face {
+            font-family: 'unicons';
+            src: url('../font/unicons.eot?42479262');
+            src: url('../font/unicons.eot?42479262#iefix') format('embedded-opentype'),
+                url('../font/unicons.woff2?42479262') format('woff2'),
+                url('../font/unicons.woff?42479262') format('woff'),
+                url('../font/unicons.ttf?42479262') format('truetype'),
+                url('../font/unicons.svg?42479262#unicons') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+        .contact .contact-info p::before,
+        .presentation a:first-child button::before {
+            font-family: "unicons";
+            font-style: normal;
+            font-weight: normal;
+            speak: none;
+            display: inline-block;
+            text-decoration: inherit;
+            width: 1em;
+            margin-right: .2em;
+            text-align: center;
+            /* For safety - reset parent styles, that can break glyph codes*/
+            font-variant: normal;
+            text-transform: none;
+            /* fix buttons height, for twitter bootstrap */
+            line-height: 1em;
+            /* Animation center compensation - margins should be symmetric */
+            /* remove if not needed */
+            margin-left: .2em;
+            /* you can be more comfortable with increased icons size */
+            /* font-size: 120%; */
+            /* Font smoothing. That was taken from TWBS */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            /* Uncomment for 3D effect */
+            /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+        }
+    </code>
+</pre>
+                </li>
+                <li>
+                    <p> 
+                        Now we use the psudo-element <i>::before</i> to create an element as a first child of the elements of the website where we will need to use icon, that are, the section with contact information below the Google Maps' Iframe in the Contact Page, and the Download resume button in the About page.
+                    </p>
+<pre>
+    <code>
+        .contact .contact-info p::before,
+        .presentation a:first-child button::before {
+            font-family: "unicons";
+            font-style: normal;
+            font-weight: normal;
+            speak: none;
+            display: inline-block;
+            text-decoration: inherit;
+            width: 1em;
+            margin-right: .2em;
+            text-align: center;
+            /* For safety - reset parent styles, that can break glyph codes*/
+            font-variant: normal;
+            text-transform: none;
+            /* fix buttons height, for twitter bootstrap */
+            line-height: 1em;
+            /* Animation center compensation - margins should be symmetric */
+            /* remove if not needed */
+            margin-left: .2em;
+            /* you can be more comfortable with increased icons size */
+            /* font-size: 120%; */
+            /* Font smoothing. That was taken from TWBS */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            /* Uncomment for 3D effect */
+            /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+        }
+    </code>
+</pre>
+                </li>
+                <li>
                     <p>
                         Inside each section, we use a <code>&#60;div&#62;</code> element with class <i>container</i> to limit the  width of all the website's information to 1000px, and to center it.
                         In this way, we can apply a border to each section to draw a dividing line that takes up the whole viewport width, and then make the content inside each section narower and centered.
@@ -348,40 +431,33 @@
                 <li>
                        Now we style the first button.
                        We give some space between it and the second one.
-                       Then we give some space inside the button's left side, and them we use that space to place the download icon as a background image, and behind, the regular button background color.
+                       Then we set the width of the buttom to be able to contain all its content.
     <pre>
         <code>
             .presentation a:first-child button {
                 margin-right: 10px;
-                padding-left: 40px;
-                background: 
-                url(../images/download.png) no-repeat 20px center/12px,
-                #474559
-                ;
+                width: fit-content;
             }
         </code>
     </pre>
                 </li>
                 <li>
-                       We create a hover effect on buttons by turning the cursor into a pointer and changing the background color.
+                       We insert the <a href="https://fontawesome.com/">Font Awesome</a> at the beginning of the button.
+    <pre>
+        <code>
+            .presentation a:first-child button::before {
+                content: '\e9b8';
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                       Finally we add some interactivity to buttons. When the user hovers them, the cursor will turn into a pointer, and the background color will change.
     <pre>
         <code>
             .presentation button:hover {
                 cursor: pointer;
                 background: #0019ff;
-            }
-        </code>
-    </pre>
-                </li>
-                <li>
-                       The previous rule would remove the first button download icon, so we will have to set a specific background for when the first button is hovered.
-    <pre>
-        <code>
-            .presentation a:first-child button:hover {
-                background: 
-                url(../images/download.png) no-repeat 20px center/12px,
-                #0019ff
-                ;
             }
         </code>
     </pre>
