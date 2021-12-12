@@ -631,6 +631,19 @@
     </pre>
                 </li>
                 <li>
+                    We turn the <i>Tooplate</i> words blue, so and add them underline when hovered, so the users now that they are clickable.
+    <pre>    
+        <code>
+            .education a {
+                color: #0019ff;
+            }
+            .education a:hover {
+                text-decoration: underline;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
                     Finally, talking about the last <code>&#60;section&#62;</code> of the 'About' page, we place it in the thrid row, from the 3rd to the 11th column.
                     We turn it into a flexbox, and set the direction to column, so the <code>&#60;h2&#62;</code> get placed above the <code>&#60;blockquote&#62;</code>.
                     Then we place them in the center of the <code>&#60;section&#62;</code>.

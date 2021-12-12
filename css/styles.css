@@ -315,6 +315,14 @@ footer a:hover {
   height: 40%;
 }
 
+.education a {
+  color: #0019ff;
+}
+
+.education a:hover {
+  text-decoration: underline;
+}
+
 .customers {
   grid-column: 3 / 11;
   display: flex;
