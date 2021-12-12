@@ -32,6 +32,11 @@
                 <a class="button" href="#portfolio">Portfolio Page</a>
             </button>
         </li>
+        <li>
+            <button>
+                <a class="button" href="#contact">Contact Page</a>
+            </button>
+        </li>
     </ul>
 </section>
 <!-- GENERAL SPECIFICATIONS -->
@@ -997,6 +1002,24 @@
             }
         </code>
     </pre>
+                </li>
+            </ul>
+            <!-- 
+            'CONTACT' PAGE MAIN
+            -->
+            <h1 id="contact">Contact Page</h1>
+            <img 
+            src="images/screenshots/contact.png"
+            >
+            <ul>
+                <li>
+                    Contact page container have two nested <code>&#60;div&#62;</code>s.
+                </li>
+                <li>
+                    The first <code>&#60;div&#62;</code>, with class="title" is just the same HTML and CSS code as the Portfolio's page <code>&#60;div&#62;</code> with the same class attribute.
+                </li>
+                <li>
+                    Regarding the second <code>&#60;div&#62;</code>
                 </li>
             </ul>
 </section>
