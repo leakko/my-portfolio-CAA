@@ -1019,7 +1019,52 @@
                     The first <code>&#60;div&#62;</code>, with class="title" is just the same HTML and CSS code as the Portfolio's page <code>&#60;div&#62;</code> with the same class attribute.
                 </li>
                 <li>
-                    Regarding the second <code>&#60;div&#62;</code>
+                    Regarding the second <code>&#60;div&#62;</code>, with class="content", is where we have the actual information and functionalities of this page.
+                </li>
+                <li>
+                    This <code>&#60;div&#62;</code> is composed of the two main <code>&#60;section&#62;</code>s o this page.
+                    The first one includes location and contact information.
+                    The location is presented through an <code>&#60;iframe&#62;</code> element that embeds a Google Maps HTML code, presenting the map in a container which size is defined by the width and height attributes.
+                    As the second element of this <code>&#60;section&#62;</code> we have a <code>&#60;div&#62;</code> element with the contact information, which is presented as the <code>&#60;iframe&#62;</code>'s footer in some way.
+                    This contact information is composed of two <code>&#60;div&#62;</code>s, the first one with a telephone and an e-amil, and the second one, with the social media.
+                    Each contact item is represented by a <code>&#60;p&#62;</code> with an <code>&#60;a&#62;</code> inside, so the user can navigate the respective contact information (through the href attribute).
+                    The social media href values are regular URLs, but the telephone and mail have the <i>tel:</i> and <i>mailto:</i> prefixes, to allow the user to call to the number of send an email easily (if the usar have a telephone/email provider configured)
+                </li>
+                <li>
+                    Regarding the form <code>&#60;section&#62;</code>, it has just one <code>&#60;form&#62;</code> element nested.
+                    Inside, we have a <code>&#60;h2&#62;</code>, and then, a <code>&#60;p&#62;</code> to wrap each <code>&#60;label&#62;</code> / controller pair.
+                    We link the <code>&#60;label&#62;</code> to the controller through the <i>for</i> attribute.
+                    Inside each <code>&#60;input&#62;</code> / <code>&#60;textare&#62;</code>, we use the id attribute to link the controller to the <code>&#60;label&#62;</code>, the <i>name</i> attribute to control how the form information is sent, and the <i>required</i> attrubute to make the field mandatory.
+                    Apart from that, we use the class attribute only in the form controllers in which we want to add the following javascript functionality:
+    <pre>
+        <code>
+            const inputs = document.getElementsByClassName('responsive-input')
+            for (let input of inputs) {
+                input.addEventListener('focus', () => {
+                    const parent = input.parentElement;
+                    parent.classList.add('is-focused')
+                })
+            }
+            const textarea = document.getElementsByTagName('textarea')[0]
+            textarea.addEventListener('focus', () => {
+                const parent = textarea.parentElement;
+                parent.classList.add('is-focused')
+            })
+        </code>
+    </pre>
+                What this code does is to select the form controls with the class equal to <i>responsive-input</i> (and also the <code>&#60;textarea&#62;</code>), and when the user focus the respective form controller, the direct parent element (<code>&#60;p&#62;</code>) will recieve the class <i>is-focused</i>, which we will use to make the label move to the top left of the input area, and to make the text smaller, so the user can see the information that is typing.
+    <pre>
+        <code>
+            .is-focused label {
+                bottom: 12px;
+                left: 5px !important;
+                font-size: 15px;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                    Finally, we add a submit button.
                 </li>
             </ul>
 </section>

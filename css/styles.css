@@ -595,8 +595,8 @@ form p:nth-child(5) {
 
 .is-focused label {
   bottom: 12px;
-  font-size: 15px;
   left: 5px !important;
+  font-size: 15px;
 }
 
 textarea {

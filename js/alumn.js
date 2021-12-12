@@ -1,4 +1,4 @@
-const inputs = document.getElementsByTagName('input')
+const inputs = document.getElementsByClassName('responsive-input')
 
 for (let input of inputs) {
     input.addEventListener('focus', () => {
