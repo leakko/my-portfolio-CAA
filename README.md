@@ -1237,12 +1237,14 @@
                 </li>
                 <li>
                    Now we move left every label (except the checkbox's one), and give them visible using the z-index property.
+                   Finally we give an smooth behaviour to the subsequent changes we will apply to labels when the user interacts with the form controls.
     <pre>
         <code>
             label:not(#checkbox-label) {
                 position: relative;
                 left: 10px;
                 z-index: 1;
+                transition: all 1s 5ms;
             }
         </code>
     </pre>

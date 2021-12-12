@@ -576,6 +576,7 @@ label:not(#checkbox-label) {
   position: relative;
   left: 10px;
   z-index: 1;
+  transition: all 1s 5ms;
 }
 
 p:nth-child(1n + 2) input,
