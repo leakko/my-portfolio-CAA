@@ -485,11 +485,6 @@ h3 {
 
 /* CONTACT PAGE MAIN */
 
-.iframe-footer {
-  background-color: #474559;
-  color: white;
-  padding: 20px;
-}
 
 .contact {
   margin-bottom: 100px;
@@ -498,6 +493,12 @@ h3 {
 .content {
   display: flex;
   justify-content: space-between;
+}
+
+.iframe-footer {
+  background-color: #474559;
+  color: white;
+  padding: 20px;
 }
 
 iframe,
@@ -556,6 +557,7 @@ iframe * {
 
 .form {
   width: 55%;
+  margin: 0 10px;
 }
 
 input:not(input[type="checkbox"]),
@@ -583,6 +585,10 @@ textarea {
 
 form p:nth-child(5) {
   height: 85px;
+}
+
+#checkbox-container {
+  margin-top: 40px;
 }
 
 .contact label a {
@@ -622,4 +628,8 @@ textarea:focus {
   background-color: #0019ff;
   cursor: pointer;
   color: white;
+}
+
+label a:hover {
+  text-decoration: underline;
 }

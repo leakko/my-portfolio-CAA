@@ -1032,10 +1032,10 @@
                 </li>
                 <li>
                     Regarding the form <code>&#60;section&#62;</code>, it has just one <code>&#60;form&#62;</code> element nested.
-                    Inside, we have a <code>&#60;h2&#62;</code>, and then, a <code>&#60;p&#62;</code> to wrap each <code>&#60;label&#62;</code> / controller pair.
-                    We link the <code>&#60;label&#62;</code> to the controller through the <i>for</i> attribute.
-                    Inside each <code>&#60;input&#62;</code> / <code>&#60;textare&#62;</code>, we use the id attribute to link the controller to the <code>&#60;label&#62;</code>, the <i>name</i> attribute to control how the form information is sent, and the <i>required</i> attrubute to make the field mandatory.
-                    Apart from that, we use the class attribute only in the form controllers in which we want to add the following javascript functionality:
+                    Inside, we have a <code>&#60;h2&#62;</code>, and then, a <code>&#60;p&#62;</code> to wrap each <code>&#60;label&#62;</code> / control pair.
+                    We link the <code>&#60;label&#62;</code> to the control through the <i>for</i> attribute.
+                    Inside each <code>&#60;input&#62;</code> / <code>&#60;textare&#62;</code>, we use the id attribute to link the control to the <code>&#60;label&#62;</code>, the <i>name</i> attribute to control how the form information is sent, and the <i>required</i> attrubute to make the field mandatory.
+                    Apart from that, we use the class attribute only in the form controls in which we want to add the following javascript functionality:
     <pre>
         <code>
             const inputs = document.getElementsByClassName('responsive-input')
@@ -1052,7 +1052,7 @@
             })
         </code>
     </pre>
-                What this code does is to select the form controls with the class equal to <i>responsive-input</i> (and also the <code>&#60;textarea&#62;</code>), and when the user focus the respective form controller, the direct parent element (<code>&#60;p&#62;</code>) will recieve the class <i>is-focused</i>, which we will use to make the label move to the top left of the input area, and to make the text smaller, so the user can see the information that is typing.
+                What this code does is to select the form controls with the class equal to <i>responsive-input</i> (and also the <code>&#60;textarea&#62;</code>), and when the user focus the respective form control, the direct parent element (<code>&#60;p&#62;</code>) will recieve the class <i>is-focused</i>, which we will use to make the label move to the top left of the input area, and to make the text smaller, so the user can see the information that is typing.
     <pre>
         <code>
             .is-focused label {
@@ -1066,8 +1066,312 @@
                 <li>
                     Finally, we add a submit button.
                 </li>
+                <li>
+                   Starting with the CSS, we add some margin to create space between the <code>&#60;div&#62;</code> section and the <code>&#60;footer&#62;</code>.
+    <pre>
+        <code>
+            .contact {
+                margin-bottom: 100px;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                    We turn the <code>&#60;div&#62;</code> that contain the two <code>&#60;section&#62;</code>s  of the page into a flexbox, so one section is placed next to the other one.
+                   Then we use <i>justify-content</i> to make this content occupy the full width of the page's container.
+    <pre>
+        <code>
+            .content {
+                display: flex;
+                justify-content: space-between;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   Talking about the <code>&#60;div&#62;</code> below the <code>&#60;iframe&#62;</code>, we give it a background color, we turn the text white, and add some padding in all the sides.
+    <pre>
+        <code>
+            .iframe-footer {
+                background-color: #474559;
+                color: white;
+                padding: 20px;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   We remove all the possible spacing surrounding the google map, so there is space between the map and its footer.
+    <pre>
+        <code>
+            iframe,
+            iframe * {
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   We remove the margin at the top of the map footer heading, and make its font size bigger.
+    <pre>
+        <code>
+            .contact h3 {
+                margin-top: 0;
+                font-size: 35px;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   Now we make the container of the contact information a flexbox and use the <i>justify-content</i>, so the <code>&#60;div&#62;</code> with the email and the phone is place at the left of the map's footer, and the social media <code>&#60;div&#62;</code> is placed at the right side.
+    <pre>
+        <code>
+            .contact-info {
+                display: flex;
+                justify-content: space-between;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   When the user hovers on a specific contact option, it will change its color.
+    <pre>
+        <code>
+            .contact-info a:hover {
+                color: #72edca;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   Now using complex pseudo-selectors, we insert a <i>Font Awesome</i>'s icon at the left of each contact option.
+    <pre>
+        <code>
+            .direct p:first-child::before {
+                content: '\eaca';
+            }
+            .direct p:nth-child(2)::before {
+                content: '\e992';
+            }
+            .social p:first-child::before {
+                content: '\e96e';
+            }
+            .social p:nth-child(2)::before {
+                content: '\ea3a';
+            }
+            .social p:nth-child(3)::before {
+                content: '\ebe8';
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   We set the spacing between the social media options.
+    <pre>
+        <code>
+            .social p {
+                margin: 5px 0;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   And we add a bigger margin at the top of the first social media, so it gets placed at the same height than the telephone.
+    <pre>
+        <code>
+            .social p:first-child {
+                margin-top: 12px;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   We remove the default anchor styles inside this page.
+    <pre>
+        <code>
+            .contact a {
+                color: white;
+                text-decoration: none;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   We make the form to take up most of the width of the containers space, but letting some space with the map's section.
+                   We also add some space at both sides of the form.
+    <pre>
+        <code>
+            .form {
+                width: 55%;
+                margin: 0 10px;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   Now we select every form controller except the checkbox, and the make then take up the whole form width. 
+                   The we move each one upwards so the form is placed just behind its label, creating the <i>placeholder</i> effect.
+    <pre>
+        <code>
+            input:not(input[type="checkbox"]),
+            textarea {
+                width: 100%;
+                position: relative;
+                bottom: 35px;
+                left: 1px;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   Now we give more height to all inputs (except the checkbox)
+    <pre>
+        <code>
+            input:not(input[type="checkbox"]) {
+                height: 40px;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   Now we move left every label (except the checkbox's one), and give them visible using the z-index property.
+    <pre>
+        <code>
+            label:not(#checkbox-label) {
+                position: relative;
+                left: 10px;
+                z-index: 1;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   We give some more space between form controls.
+    <pre>
+        <code>
+            p:nth-child(1n + 2) input,
+            textarea {
+                margin: 5px 0;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   We make the checkbox narrower.
+    <pre>
+        <code>
+            form p:nth-child(5) {
+                height: 85px;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   We give some space between the checkbox and the rest of the form controls.
+    <pre>
+        <code>
+            #checkbox-container {
+                margin-top: 40px;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   Now we set the color of the <i>Terms and conditions</i> link.
+    <pre>
+        <code>
+            .contact label a {
+                color: #0019ff;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   We remove the margin at the top of the form heading.
+    <pre>
+        <code>
+            .contact h2 {
+                margin-top: 0;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   Now its time to configure how the label will behave when the user focus the respective form control.
+                   We will move up-left the label, and set a smaller font size.
+    <pre>
+        <code>
+            .is-focused label {
+                bottom: 12px;
+                left: 5px !important;
+                font-size: 15px;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   We add some inner space at the top of the textarea input, so it gives the impression that the user is staring to type in the second row.
+    <pre>
+        <code>
+            textarea {
+                padding-top: 15px
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   Again regarding the interactivity of the form controls, when the user focus one, we remove the default border (<i>outline</i>) at set our specific border with a different color.
+    <pre>
+        <code>
+            input:focus ,
+            textarea:focus {
+                outline: none;
+                border: 2px solid #0019ff;
+                border-radius: 5px;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   Now we style the submit button.
+                   We remove the default borders, make the button bigger, make the text bold, change the background color and make it rounded.
+    <pre>
+        <code>
+            .contact button {
+                border: none;
+                padding: 15px 75px;
+                font-weight: bold;
+                background-color: #72edca;
+                border-radius: 25px;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   When the users hover the button, its color and background color will change, and also the cursor will turn into a pointer.
+    <pre>
+        <code>
+            .contact button:hover {
+                background-color: #0019ff;
+                cursor: pointer;
+                color: white;
+            }
+        </code>
+    </pre>
+                </li>
+                <li>
+                   Finally, the user hovers the <i>Terms and conditions</i> link, we will add an underline.
+    <pre>
+        <code>
+            label a:hover {
+                text-decoration: underline;
+            }
+        </code>
+    </pre>
+                </li>
             </ul>
 </section>
 <section>
-
 </section>
