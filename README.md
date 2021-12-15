@@ -255,8 +255,8 @@
                         In the second line, we have an <code>&#60;a&#62;</code> with the <i>href</i> attribute set to <i>_blank</i>, so that the page opens in a new tab.
                     </li>
                     <li>
-                        We turn the <code>&#60;footer&#62;</code> into a flexbox, and use the flex-direction to place each <code>&#60;p&#62;</code> above each other. Then we can use <i>justify-content</i> and <i>align-items</i> together to plce both lines in the center of the <code>&#60;footer&#62;</code>.
-                        Then we give some space at the top and bottom, and finally we add a <i>border-top</i> to ivide the <code>&#60;footer&#62;</code> from the <code>&#60;main&#62;</code> section.
+                        We turn the <code>&#60;footer&#62;</code> into a flexbox, and use the flex-direction to place each <code>&#60;p&#62;</code> above each other. Then we can use <i>justify-content</i> and <i>align-items</i> together to place both lines in the center of the <code>&#60;footer&#62;</code>.
+                        Then we give some space at the top and bottom, and finally we add a <i>border-top</i> to separate the <code>&#60;footer&#62;</code> from the <code>&#60;main&#62;</code> section.
     <pre>
         <code>
             footer {
@@ -399,7 +399,7 @@
                 <li>
                        Now we style the first button.
                        We give some space between it and the second one.
-                       Then we set the width of the buttom to be able to contain all its content.
+                       Then we set the width of the button to be able to contain all its content.
     <pre>
         <code>
             .presentation a:first-child {
@@ -488,7 +488,7 @@
     </pre>
                 </li>
                 <li>
-                    We make the each experience/education item a flexbox, so the date is placed next to the information itself.
+                    We make each experience/education item a flexbox, so the date is placed next to the information itself.
                     Then we make both divs align to the left.
     <pre>
         <code>
@@ -555,7 +555,7 @@
     </pre>
                 </li>
                 <li>
-                    Regarding the company/school name, we give it an specific font colot, we make it smaller, also remove the bottom margin, and finally, we set the position to relative to be able to move it down a little bit.
+                    Regarding the company/school name, we give it an specific font color, we make it smaller, also remove the bottom margin, and finally, we set the position to relative to be able to move it down a little bit.
     <pre>    
         <code>
             .list-item .title h4 {
@@ -673,7 +673,7 @@
     </pre>
                 </li>
                 <li>
-                    Talking abput the blockquote, we align its text in the center, we set the left quote image as a background-image in the top-center, we add some space inside the blockquote box to make it bigger.
+                    Talking about the blockquote, we align its text in the center, we set the left quote image as a background-image in the top-center, we add some space inside the blockquote box to make it bigger.
                     We set the position to relative to control the position of absolute positioned nested elements better.
                     Finally we make the font a little bigger.
     <pre>                
@@ -740,7 +740,7 @@
                 <li>
                     Turning to the first <code>&#60;section&#62;</code>, we have the <code>&#60;table&#62;</code> as the direct child. This <code>&#60;table&#62;</code> is composed of a <code>&#60;caption&#62;</code> (to tell users what the table is about), <code>&#60;thead&#62;</code> (table head) and <code>&#60;tbody&#62;</code> (table body).
                     The <code>&#60;thead&#62;</code> have just one <code>&#60;tr&#62;</code> with three <code>&#60;th&#62;</code>s, each with an <i>scope</i> attribute to indicate that they are headings of columns.
-                    In the <code>&#60;tbody&#62;</code>we have 4 rows, and inside each row, 3 <code>&#60;td&#62;</code> (table data. In the last <code>&#60;td&#62;</code> of each row have one anchor that links to each project wesite. 
+                    In the <code>&#60;tbody&#62;</code>we have 4 rows, and inside each row, 3 <code>&#60;td&#62;</code> (table data. In the last <code>&#60;td&#62;</code> of each row have one anchor that links to each project website. 
                 </li>
                 <li>
                     Finally we have the <code>&#60;section&#62;</code> that contains the images.
@@ -758,7 +758,7 @@
     </pre>
                 </li>
                 <li>
-                    We turn the title's <code>&#60;div&#62;</code> into a grid, so in the next css rule we can set the central <code>&#60;h1&#62;</code> to take up ony the space its content needs, and the lines' <code>&#60;div&#62;</code>s the rest of the available container's space.
+                    We turn the title's <code>&#60;div&#62;</code> into a grid, so in the next css rule we can set the central <code>&#60;h1&#62;</code> to take up only the space its content needs, and the lines' <code>&#60;div&#62;</code>s the rest of the available container's space.
                     Then we give some margin at the top and bottom.
     <pre>
         <code>
@@ -831,7 +831,7 @@
     </pre>
                 </li>
                 <li>
-                    We give some space at the top and bottom of the <code>&#60;caption&#62;</code>, and make its texr bigger.
+                    We give some space at the top and bottom of the <code>&#60;caption&#62;</code>, and make its text bigger.
     <pre>
         <code>
             caption {
@@ -917,7 +917,7 @@
     </pre>
                 </li>
                 <li>
-                  Then we make the <code>&#60;div&#62;</code> that contains the images items a lexbox, and set the <i>flex-wrap</i> property to <i>black</i>, so each new image and description get placed at the right of the previous one, and when it doesn't fit in the row, it get place as the first item in the next one.
+                  Then we make the <code>&#60;div&#62;</code> that contains the images items a flexbox, and set the <i>flex-wrap</i> property to <i>black</i>, so each new image and description get placed at the right of the previous one, and when it doesn't fit in the row, it get place as the first item in the next one.
     <pre>
         <code>
             .images > div {
@@ -1039,9 +1039,9 @@
                     The first one includes location and contact information.
                     The location is presented through an <code>&#60;iframe&#62;</code> element that embeds a Google Maps HTML code, presenting the map in a container which size is defined by the width and height attributes.
                     As the second element of this <code>&#60;section&#62;</code> we have a <code>&#60;div&#62;</code> element with the contact information, which is presented as the <code>&#60;iframe&#62;</code>'s footer in some way.
-                    This contact information is composed of two <code>&#60;div&#62;</code>s, the first one with a telephone and an e-amil, and the second one, with the social media.
+                    This contact information is composed of two <code>&#60;div&#62;</code>s, the first one with a telephone and an e-mail, and the second one, with the social media.
                     Each contact item is represented by a <code>&#60;p&#62;</code> with an <code>&#60;a&#62;</code> inside, so the user can navigate the respective contact information (through the href attribute).
-                    The social media href values are regular URLs, but the telephone and mail have the <i>tel:</i> and <i>mailto:</i> prefixes, to allow the user to call to the number of send an email easily (if the usar have a telephone/email provider configured)
+                    The social media href values are regular URLs, but the telephone and mail have the <i>tel:</i> and <i>mailto:</i> prefixes, to allow the user to call to the number of send an email easily (if the user have a telephone/email provider configured)
                 </li>
                 <li>
                     Regarding the form <code>&#60;section&#62;</code>, it has just one <code>&#60;form&#62;</code> element nested.
@@ -1065,7 +1065,7 @@
             })
         </code>
     </pre>
-                What this code does is to select the form controls with the class equal to <i>responsive-input</i> (and also the <code>&#60;textarea&#62;</code>), and when the user focus the respective form control, the direct parent element (<code>&#60;p&#62;</code>) will recieve the class <i>is-focused</i>, which we will use to make the label move to the top left of the input area, and to make the text smaller, so the user can see the information that is typing.
+                What this code does is to select the form controls with the class equal to <i>responsive-input</i> (and also the <code>&#60;textarea&#62;</code>), and when the user focus the respective form control, the direct parent element (<code>&#60;p&#62;</code>) will receive the class <i>is-focused</i>, which we will use to make the label move to the top left of the input area, and to make the text smaller, so the user can see the information that is typing.
     <pre>
         <code>
             .is-focused label {
@@ -1225,7 +1225,7 @@
                 </li>
                 <li>
                    Now we select every form controller except the checkbox, and the make then take up the whole form width. 
-                   The we move each one upwards so the form is placed just behind its label, creating the <i>placeholder</i> effect.
+                   Then we move each one upwards so the form is placed just behind its label, creating the <i>placeholder</i> effect.
     <pre>
         <code>
             input:not(input[type="checkbox"]),
